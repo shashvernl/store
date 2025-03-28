@@ -6,6 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { data } from '../helpers/data';
+import {LoadingIconButton} from '../components/Icons.jsx';
+
 
 export default function main() {
   return (
@@ -26,10 +28,11 @@ export default function main() {
         </Typography>
        </CardContent>
        <CardActions>
-        <Button size="small">В корзину</Button>
+        <LoadingIconButton />
        </CardActions>
        </Card>      
      ))}
+     
     </div>
   )
 }
