@@ -6,12 +6,12 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Tooltip from '@mui/material/Tooltip';
 
-const StyledBadge = styled(Badge)({
-  [`& .${badgeClasses.badge}`]: {
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  [`& .${Badge.badge}`]: {
     top: -12,
     right: -6,
   },
-});
+}));
 
 export function IconButtonWithBadge() {
   return (
